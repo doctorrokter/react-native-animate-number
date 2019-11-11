@@ -1,18 +1,10 @@
-/**
- * @author wkh237
- * @version 0.1.1
- */
-
-// @flow
-
 import React, { Component } from 'react';
 import {
   Text,
-  View
+  View,
 } from 'react-native';
-import Timer from 'react-timer-mixin';
 
-const HALF_RAD = Math.PI/2
+const HALF_RAD = Math.PI / 2;
 
 export default class AnimateNumber extends Component {
 
@@ -86,10 +78,10 @@ export default class AnimateNumber extends Component {
   }
 
   componentDidMount() {
-    this.startFrom = this.state.value
-    this.endWith = this.props.value
-    this.dirty = true
-    this.startAnimate()
+    this.startFrom = this.state.value;
+    this.endWith = this.props.value;
+    this.dirty = true;
+    this.startAnimate();
   }
 
   componentWillUpdate(nextProps, nextState) {
